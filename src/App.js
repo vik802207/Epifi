@@ -1,25 +1,72 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate, BrowserRouter } from 'react-router-dom';
+import LoginForm from './components/LoginForm';
+import SignupForm from './components/SignupForm';
+import ProductList from './components/ProductList';
+import AddProductForm from './components/AddProductForm';
+import UpdateQuantityForm from './components/UpdateQuantityForm';
+import Navbar from './components/Navbar';
+import Dashboard from './components/Dashboard';
 
-function App() {
+const Home = ({ onLogout, refreshKey, refreshData }) => (
+  <div>
+    <Navbar onLogout={onLogout} />
+    <AddProductForm onAdded={refreshData} />
+    <UpdateQuantityForm />
+    <ProductList onRefresh={refreshKey} />
+  </div>
+);
+
+const App = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem('token'));
+  const [refreshKey, setRefreshKey] = useState(0);
+
+  const refreshData = () => setRefreshKey(prev => prev + 1);
+
+  const handleLogout = () => {
+    localStorage.clear();
+    setIsLoggedIn(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            isLoggedIn ? (
+              <Home onLogout={handleLogout} refreshKey={refreshKey} refreshData={refreshData} />
+            ) : (
+              <Navigate to="/login" replace />
+            )
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            isLoggedIn ? (
+              <Navigate to="/" replace />
+            ) : (
+              <LoginForm onLogin={() => setIsLoggedIn(true)} />
+            )
+          }
+        />
+        <Route
+          path="/signup"
+          element={
+            isLoggedIn ? (
+              <Navigate to="/" replace />
+            ) : (
+              <SignupForm onSignup={() => setIsLoggedIn(true)} />
+            )
+          }
+        />
+        <Route path='/dashboard' element={<Dashboard/>}/>
+          <Route path="/signup" element={<SignupForm />} />
+        <Route path="/login" element={<LoginForm />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

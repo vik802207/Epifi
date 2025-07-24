@@ -21,6 +21,9 @@ A full-stack inventory management system with product listing, authentication, q
   - Edit Quantity 📝
   - Delete Product 🗑️
 - 📬 Auth-protected API routes
+---
+🔗 **Live Frontend**: [https://epify.netlify.app](https://epify.netlify.app)  
+🔗 **Live Backend**: [https://epifi.onrender.com](https://epifi.onrender.com)
 
 ---
 ## Screenshots

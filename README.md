@@ -21,6 +21,22 @@ A full-stack inventory management system with product listing, authentication, q
   - Edit Quantity 📝
   - Delete Product 🗑️
 - 📬 Auth-protected API routes
+
+
+## 🧪 Postman API Testing Instructions
+Open Postman and set the base URL to:
+https://epifi.onrender.com
+Test the following endpoints:
+
+- ***POST /api/signup – Create a new user***
+
+- ***POST /api/login – Login and receive JWT token***
+
+- ***POST /api/products – Add new product (requires token)***
+
+- ***GET /api/products – Get all products (requires token)***
+
+- ***POST /api/products/:id/quantity – Update product quantity (requires token)***
 ---
 ### Live Project Link
 🔗 **Live Frontend**: [https://epify.netlify.app](https://epify.netlify.app)  

@@ -23,6 +23,10 @@ A full-stack inventory management system with product listing, authentication, q
 - 📬 Auth-protected API routes
 
 ---
+## Screenshots
+---
+![Alt text](https://github.com/vik802207/DpDZero-Feedback/blob/main/img/Screenshot%20(522).png?raw=true)
+
 
 ## 🛠️ Installation
 

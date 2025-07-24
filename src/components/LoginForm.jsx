@@ -14,7 +14,7 @@ const LoginForm = ({ onLogin }) => {
       const res = await axios.post("http://localhost:8000/api/login", form);
       localStorage.setItem('token', res.data.token);
       onLogin();
-      <Navigate to="/"/>
+      <Navigate to="/dashboard"/>
     } catch (err) {
       alert('Login failed');
        <Navigate to="/login"/>

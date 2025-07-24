@@ -32,7 +32,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route
-          path="/"
+          path="/dashboard"
           element={
             isLoggedIn ? (
               <Home onLogout={handleLogout} refreshKey={refreshKey} refreshData={refreshData} />
@@ -45,7 +45,7 @@ const App = () => {
           path="/login"
           element={
             isLoggedIn ? (
-              <Navigate to="/" replace />
+              <Navigate to="/dashboard" replace />
             ) : (
               <LoginForm onLogin={() => setIsLoggedIn(true)} />
             )
@@ -55,13 +55,13 @@ const App = () => {
           path="/signup"
           element={
             isLoggedIn ? (
-              <Navigate to="/" replace />
+              <Navigate to="/login" replace />
             ) : (
               <SignupForm onSignup={() => setIsLoggedIn(true)} />
             )
           }
         />
-        <Route path='/dashboard' element={<Dashboard/>}/>
+        <Route path='/' element={<Dashboard/>}/>
           <Route path="/signup" element={<SignupForm />} />
         <Route path="/login" element={<LoginForm />} />
       </Routes>

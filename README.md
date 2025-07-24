@@ -25,7 +25,16 @@ A full-stack inventory management system with product listing, authentication, q
 ---
 ## Screenshots
 ---
-![Alt text](https://github.com/vik802207/DpDZero-Feedback/blob/main/img/Screenshot%20(522).png?raw=true)
+![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(753).png?raw=true)
+![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(754).png?raw=true)
+![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(755).png?raw=true)
+![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(756).png?raw=true)
+![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(757).png?raw=true)
+![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(758).png?raw=true)
+![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(759).png?raw=true)
+![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(760).png?raw=true)
+![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(761).png?raw=true)
+![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(762).png?raw=true)
 
 
 ## 🛠️ Installation

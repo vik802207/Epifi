@@ -25,16 +25,25 @@ A full-stack inventory management system with product listing, authentication, q
 ---
 ## Screenshots
 ---
+## Backend Api
+### 1. User Authentication
+#### Signup
 ![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(754).png?raw=true)
+#### Login
 ![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(755).png?raw=true)
+### 2. Add Product
+![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(767).png?raw=true)
 ![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(763).png?raw=true)
 ![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(764).png?raw=true)
-![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(765).png?raw=true)
+### 3. Update Product Quantity
 ![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(766).png?raw=true)
+![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(765).png?raw=true)
+### Frontend
 ![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(756).png?raw=true)
 ![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(757).png?raw=true)
 ![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(758).png?raw=true)
 ![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(759).png?raw=true)
+## Database
 ![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(760).png?raw=true)
 ![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(761).png?raw=true)
 ![Alt text](https://github.com/vik802207/Epifi/blob/main/img/Screenshot%20(762).png?raw=true)

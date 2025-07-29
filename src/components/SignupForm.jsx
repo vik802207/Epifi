@@ -10,7 +10,7 @@ const SignupForm = ({ onSignup }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:8000/api/signup", form);
+      const res = await axios.post("hhttps://epifi.onrender.com/api/signup", form);
       localStorage.setItem('token', res.data.token);
       onSignup(); 
        <Navigate to="/login" replace />

@@ -6,7 +6,7 @@ const UpdateQuantityForm = () => {
   const [quantity, setQuantity] = useState(0);
 
   const updateQuantity = async () => {
-    await axios.put(`http://localhost:8000/api/products/${productId}/quantity`, { quantity }, {
+    await axios.put(`https://epifi.onrender.com/api/products/${productId}/quantity`, { quantity }, {
       headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
     });
     alert('Quantity updated');

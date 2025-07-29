@@ -11,7 +11,7 @@ const LoginForm = ({ onLogin }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:8000/api/login", form);
+      const res = await axios.post("https://epifi.onrender.com/api/login", form);
       localStorage.setItem('token', res.data.token);
       onLogin();
       <Navigate to="/dashboard"/>

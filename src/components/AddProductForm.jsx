@@ -11,7 +11,7 @@ const AddProductForm = ({ onAdded }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:8000/api/products", form, {
+    await axios.post("https://epifi.onrender.com/api/products", form, {
       headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
     });
     onAdded();

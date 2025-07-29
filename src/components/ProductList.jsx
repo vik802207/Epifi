@@ -9,7 +9,7 @@ const ProductList = ({ onRefresh }) => {
 
   const getProducts = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/api/products", {
+      const res = await axios.get("https://epifi.onrender.com/api/products", {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
       });
       setProducts(res.data);
@@ -22,7 +22,7 @@ const ProductList = ({ onRefresh }) => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:8000/api/products/${id}`, {
+      await axios.delete(`https://epifi.onrender.com/api/products/${id}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
       });
       getProducts();
@@ -38,7 +38,7 @@ const ProductList = ({ onRefresh }) => {
 
   const handleSaveClick = async (id) => {
     try {
-      await axios.put(`http://localhost:8000/api/products/${id}/quantity`, { quantity: editedQuantity }, {
+      await axios.put(`https://epifi.onrender.com/api/products/${id}/quantity`, { quantity: editedQuantity }, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
       });
       setEditId(null);
